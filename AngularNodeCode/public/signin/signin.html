@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<link href="signinmm.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation"><a href="/">Home</a>-
+                    </li>
+                    <li> </li>
+                    <li role="presentation" class="active"><a href="#">Sign In</a>-
+                    </li><li> </li>
+                    <li role="presentation"><a href="/signUp">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Intelligent Intformation Retrieval App</h3>
+        </div>
+	<div id="login-box" ng-controller="SignInCtrl">
+		<form class="controls">
+			<input type="text" name="username" id="username" ng-model="username" placeholder="Username" class="form-control" style="margin-bottom: 3px"/>
+			<input type="password" name="password" id="password" ng-model="password" placeholder="Password" class="form-control" />
+			<button id="btnSignIn" class="btn btn-default btn-block btn-custom" ng-click="signIn()">Login</button>
+			<footer class="footer">
+            <p style="color: white">&copy; IIR COURSEWORK</p>
+        </footer>
+		</form><!-- /.controls -->
+	</div><!-- /#login-box -->
+</div>
+</body>
+</html>
+<!-- /.container -->
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>-->

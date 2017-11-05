@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Home</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<link href="signinmm.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+	    <li role="presentation" ><a href="#userHome">Home</a>-</li>
+            <li role="presentation" class="active" ><a href="#addArticle">Add</a>-</li>
+            <li role="presentation" ><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Home</h3>
+      </div>
+
+      
+	<div class="row">
+
+  <div class="col-md-8 col-sm-8 col-xs-8">
+  <input id="txtTitle" name="txtTitle" type="text" ng-model="title" placeholder="Title" class="form-control input-md">
+  </div>
+
+  <div class="col-md-8 col-sm-8 col-xs-8">
+  <input id="txtContent" name="txtContent" type="text" ng-model="content" placeholder="Content" class="form-control input-md">
+  </div>
+
+  <div class="col-md-8 col-sm-8 col-xs-8">
+  <input id="txtCategory" name="txtCategory" type="text" ng-model="category" placeholder="Category" class="form-control input-md">
+  </div>
+
+  <div class="col-md-4 col-sm-4 col-xs-4">
+    <input id="singlebutton" name="singlebutton" class="btn btn-primary" ng-click="addArticle(title, content, category)" value="Add Article" />
+  </div>
+
+
+</div>
+      
+
+      <footer class="footer">
+        <p>&copy; Company 2017</p>
+      </footer>
+
+    </div>
+</body>
+</html>
+
+
